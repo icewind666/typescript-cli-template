@@ -1,0 +1,35 @@
+{
+  "name": "typescript-cli-template",
+  "version": "1.0.0",
+  "description": "Base template for CLI with typescript",
+  "main": "index.js",
+  "bin": {
+    "terminal-conf":"./build/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "pkg . --targets node14 --output terminal-conf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icewind666/typescript-cli-template.git"
+  },
+  "keywords": [],
+  "author": "vladimir.korennoy@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icewind666/typescript-cli-template/issues"
+  },
+  "homepage": "https://github.com/icewind666/typescript-cli-template#readme",
+  "pkg": {
+    "scripts": "build/**/*.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.9",
+    "@types/yargs": "^17.0.7",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "yargs": "^17.2.1"
+  }
+}
